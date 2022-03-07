@@ -51,8 +51,8 @@ La estructura de ficheros y directorios en el repositorio puede subdividirse en 
 
 Tal y como se ha mencionado, el proyecto <i>binder</i> permite intercambiar código de forma interactiva. Para poder ver la funcionalidad del código de post-procesado, por tanto, no hace falta tener instalado ninguna distribución de Python ni clonar el repositorio. Es suficiente con clicar en cualquiera de los dos insignias (<i>badges</i>) siguientes.
 
-Esta insignia es para abrir el Notebook <i>post-proc.ipynb</i> en formato interactivo: 
+Esta insignia es para abrir el Notebook <i>post-proc.ipynb</i> en formato interactivo: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MGEP-Fluidos/Post-procesamiento_numerico_datos_tesis.git/main?urlpath=tree%2Fpost-proc.ipynb)
 
-Esta insignia para abrir la instancia raíz del servidor <i>JupyterHub</i>: 
+Esta insignia para abrir la instancia raíz del servidor <i>JupyterHub</i>: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/azarketa/Post-procesamiento_numerico_datos_tesis.git/HEAD)
 
 Téngase en cuenta que, debido a dependencias y al peso que tiene el código, las instancias de <i>binder</i> pueden llevar cierto tiempo de configuración y lanzamiento. Una vez que se ha visto la funcionalidad del código y se quieran realizar más cambios, es conveniente clonar el repositorio y trabajar en el equipo local.
