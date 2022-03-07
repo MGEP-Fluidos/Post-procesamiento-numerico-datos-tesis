@@ -53,6 +53,6 @@ Tal y como se ha mencionado, el proyecto <i>binder</i> permite intercambiar cód
 
 Esta insignia es para abrir el Notebook <i>post-proc.ipynb</i> en formato interactivo: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MGEP-Fluidos/Post-procesamiento-numerico-datos-tesis.git/main?urlpath=tree%2Fpost-proc.ipynb)
 
-Esta insignia para abrir la instancia raíz del servidor <i>JupyterHub</i>: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/azarketa/Post-procesamiento-numerico-datos-tesis.git/HEAD)
+Esta insignia para abrir la instancia raíz del servidor <i>JupyterHub</i>: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MGEP-Fluidos/Post-procesamiento-numerico-datos-tesis.git/HEAD)
 
 Téngase en cuenta que, debido a dependencias y al peso que tiene el código, las instancias de <i>binder</i> pueden llevar cierto tiempo de configuración y lanzamiento. Una vez que se ha visto la funcionalidad del código y se quieran realizar más cambios, es conveniente clonar el repositorio y trabajar en el equipo local.
