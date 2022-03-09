@@ -18,6 +18,16 @@ En principio, los datos experimentales obtenidos en el túnel de viento se han e
   <li><b>Configuración real:</b> es la configuración que reproduce tanto los efectos turbulentos como los rugosos, y el que se supone que es más fiel a lo que ocurre en aplicaciones reales.</li>
 </ol>
 
+Las medidas realizadas, en cambio, se corresponden con tres distribuciones principales:
+<ol>
+  <li>Coeficienetes de sustentacion (c<sub>l</sub>) obtenidos para distintos ángulos de ataque (&alpha;) y números de Reynolds (Re). En realidad, lo que se tienen son curvas &alpha;-c<sub>l</sub> para distintos Re. Los coeficientes de sustentación se adquieren mediante medición directa con una balanza piezoeléctrica.</li>
+  <li>Coeficientes de resistencia aerodinámica (c<sub>d</sub>) obtenidos para distintos &alpha; y Re. Se tienen curvas &alpha;-c<sub>d</sub> para distintos Re. Los coeficientes de resistencia aerodinámica se adquieren mediante el método de déficit de momento, empleando, para ello, un dispositivo <i>wake-rake</i> acoplado a un escáner de presión.</li>
+  <li>Coeficientes de presión (c<sub>p</sub>) obtenidos a lo largo de la superficie del perfil en la dirección de la cuerda, para distintos &alpha; y Re. Para cada número de Reynolds, se disponen de distintas distribuciones x'-c<sub>p</sub>, una para cada &alpha;, siendo x' el coeficiente adimensional a lo largo de la cuerda del perfil.</li>
+</ol>
+La información pertinente a la protocolización de los distintos ensayos y mediciones puede encontrarse en la memoria de la tesis mencionada anteriormente.
+
+Por el momento, la fase inicial del proyecto de colaboración consistirá en analizar las series temporales de las distribuciones x'-c<sub>p</sub> obtenidas para distintos valores de &alpha; y Re en la configuración limpia con el perfil limpio (sin equipar con elementos de rugosidad discretos).
+
 <h2>Estructura de ficheros y directorios en el repositorio</h2>
 
 La estructura de ficheros y directorios en el repositorio puede subdividirse en tres bloques:
@@ -32,17 +42,32 @@ La estructura de ficheros y directorios en el repositorio puede subdividirse en 
   </li>
   <li>El segundo bloque consta de:
     <ol>
-      <li>El directorio <i>own_packages</i> que incluye los módulos de Python propios que son necesarios para ejecutar el código del fichero <i>post-proc.ipynb</i>. Dentro del directorio se encuentra:
+      <li>El directorio <i>own_packages</i> que incluye los módulos de Python propios que son necesarios para ejecutar el código del fichero <i>post-proc.ipynb</i>. Dentro del directorio hay otros dos subdirectorios:
         <ol>
-          <li>El subdirectorio <i>Math_Tools</i>, que incluye el módulo <i>MathTools.py</i>.</li>          
+          <li>El subdirectorio <i>Math_Tools</i>, que incluye el módulo <i>MathTools.py</i>.</li>
+          <li>El subdirectorio <i>TDMS_packages</i>, que incluye los módulos <i>TDMSClasses.py</i> y <i>TDMSEnums.py</i>.</li>
         </ol>
-        Hay más información acerca de este módulo en la documentación correspondiente al Notebook, dentro del fichero <i>post-proc.ipynb</i>. De todas formas, este módulo Python no habrá de modificarse.
+        Hay más información acerca de estos módulos en la documentación correspondiente al Notebook, dentro del fichero <i>post-proc.ipynb</i>. De todas formas, estos módulos Python no habrán de modificarse.
       </li>
     </ol>
   </li>
   <li>El tercer bloque consta de:
     <ol>
       <li>El directorio raíz, <i>Num_data</i>, que incluye los datos experimentales en crudo obtenidos en el túnel de viento. La estructura de <i>Num_data</i> está especificada en el fichero <i>post-proc.ipynb</i>.</li>
+      <li>El directorio raíz, <i>Exp_data</i>, que incluye los datos experimentales en crudo obtenidos en el túnel de viento. La estructura de <i>Exp_data</i> es la siguiente, donde lo incluido hasta ahora se resalta debidamente:
+        <ul>
+          <li>- [x] Clean_config
+            <ul>
+              <li>- [x] Bare_airfoil
+                <ul>
+                  <li>- [ ] cl_cd</li>
+                  <li>- [x] cp</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ol>
   </li>
 </ol>
